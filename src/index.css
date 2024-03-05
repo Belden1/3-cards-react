@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-very-light-gray;
+  }
+}
+
+@layer components {
+  .card {
+    @apply flex min-h-[400px] flex-col justify-between gap-8 px-12 py-10 md:min-h-[500px] md:max-w-[300px];
+  }
+}
